@@ -1,7 +1,10 @@
 while True:
 	try:
 		height = int(input("Height: "))
-		break
+		if height < 1 or height > 23:
+			pass
+		else:
+			break
 	except:
 		pass
 for line in range(0, height):
@@ -9,4 +12,4 @@ for line in range(0, height):
 		print(" ", end = '')
 	for hashes in range(0, line + 2):
 		print("#", end = '')
-	print(" ");
+	print("")
