@@ -1,4 +1,9 @@
-height = int(input("Height: "))
+while True:
+	try:
+		height = int(input("Height: "))
+		break
+	except:
+		pass
 for line in range(0, height):
 	for spaces in range(1, height - line):
 		print(" ", end = '')
